@@ -3,7 +3,7 @@ type: BIOME
 abstract: true
 extends:
   - DEPOSITS_DEFAULT
-  - ORES_DEFAULT
+  #- ORES_DEFAULT
 
 slant-depth: 15
 

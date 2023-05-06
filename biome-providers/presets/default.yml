@@ -2,7 +2,7 @@ biomes:
   type: EXTRUSION
   extrusions:
     - << biome-providers/extrusions/add_cave_biomes.yml:extrusions
-    - << biome-providers/extrusions/add_deep_dark.yml:extrusions
+    #- << biome-providers/extrusions/add_deep_dark.yml:extrusions
   provider:
     type: PIPELINE
     resolution: 2
@@ -20,10 +20,10 @@ biomes:
       # (by adding a # at the start) and uncommenting the one you wish to use.
       #
       # Basic Continents
-      source: $biome-providers/sources/basic_continents.yml:source
+      #source: $biome-providers/sources/basic_continents.yml:source
       #
       # Land Only
-      #source: $biome-providers/sources/land_only.yml:source
+      source: $biome-providers/sources/land_only.yml:source
       #
       # Ocean Only
       #source: $biome-providers/sources/ocean_only.yml:source
@@ -50,7 +50,7 @@ biomes:
         # ---
         # Add mushroom islands
         # - Comment the following line to disable mushroom island generation
-        - << biome-providers/stages/add_mushroom_islands.yml:stages
+        #- << biome-providers/stages/add_mushroom_islands.yml:stages
         # ---
   
         # ---
@@ -78,7 +78,7 @@ biomes:
   
         # ---
         # Split elevation zones into temperature zones
-        - << biome-providers/stages/distribute_temperature_zones.yml:stages
+        #- << biome-providers/stages/distribute_temperature_zones.yml:stages
         #
         # Alternative temperature distributions
         # - If you want to use an alternative distribution, comment the stage
@@ -86,7 +86,7 @@ biomes:
         #   the distribution you wish to use.
         #
         # Polar Biomes Only
-        #- << biome-providers/stages/distribute_temperature_zones_polar.yml:stages
+        - << biome-providers/stages/distribute_temperature_zones_polar.yml:stages
         #
         # Hot Biomes Only
         #- << biome-providers/stages/distribute_temperature_zones_tropical.yml:stages
